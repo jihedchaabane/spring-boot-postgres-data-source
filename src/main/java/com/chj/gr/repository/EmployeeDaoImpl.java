@@ -1,4 +1,4 @@
-package com.sample.postgress.dao;
+package com.chj.gr.repository;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -15,8 +15,8 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
-import com.sample.postgress.entity.Employee;
-import com.sample.postgress.mapper.EmployeeRowMapper;
+import com.chj.gr.mapper.EmployeeRowMapper;
+import com.chj.gr.model.Employee;
 
 @Repository
 public class EmployeeDaoImpl implements EmployeeDao {

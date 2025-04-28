@@ -1,4 +1,4 @@
-package com.sample.postgress.entity;
+package com.chj.gr.model;
 
 public class Employee {
 

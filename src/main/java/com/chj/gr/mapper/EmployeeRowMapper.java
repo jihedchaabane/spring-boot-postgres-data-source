@@ -1,11 +1,11 @@
-package com.sample.postgress.mapper;
+package com.chj.gr.mapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.sample.postgress.entity.Employee;
+import com.chj.gr.model.Employee;
 
 public class EmployeeRowMapper implements RowMapper<Employee> {
 

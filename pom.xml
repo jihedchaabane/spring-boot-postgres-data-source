@@ -8,7 +8,7 @@
 		<version>2.7.18</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.sample</groupId>
+	<groupId>com.chj.gr</groupId>
 	<artifactId>spring-boot-postgres-data-source</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-postgres-data-source</name>

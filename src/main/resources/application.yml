@@ -5,17 +5,17 @@ spring:
   application:
     name: spring-boot-postgres-data-source
   datasource:
-    url: jdbc:postgresql://10.0.0.132:5432/sonarqube
+    url: jdbc:postgresql://10.0.0.132:5432/postgres_data_source
     driver-class-name: org.postgresql.Driver
-    username: sonarqube
-    password: sonarqube
+    username: postgres_data_source
+    password: postgres_data_source
     hikari:
       maximum-pool-size: 10
       minimum-idle: 5
       idle-timeout: 300000
       max-lifetime: 1800000
       connection-timeout: 30000
-      pool-name: HikariPool-YourApp
+      pool-name: HikariPool-POSTGRES-DATA-SOURCE
       auto-commit: true
       data-source-properties:
         cachePrepStmts: true

@@ -1,10 +1,11 @@
-package com.sample.postgress.service;
+package com.chj.gr.repository;
 
 import java.util.List;
 
-import com.sample.postgress.entity.Employee;
+import com.chj.gr.model.Employee;
 
-public interface EmployeeService {
+public interface EmployeeDao {
+
 	List<Employee> findAll();
 
 	void insertEmployee(Employee emp);
@@ -13,6 +14,5 @@ public interface EmployeeService {
 
 	void executeUpdateEmployee(Employee emp);
 
-	void deleteEmployee(Employee emp);
-	
+	public void deleteEmployee(Employee emp);
 }

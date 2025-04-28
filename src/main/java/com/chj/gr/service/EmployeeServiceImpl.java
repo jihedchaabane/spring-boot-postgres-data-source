@@ -1,4 +1,4 @@
-package com.sample.postgress.service;
+package com.chj.gr.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.sample.postgress.dao.EmployeeDao;
-import com.sample.postgress.entity.Employee;
+import com.chj.gr.model.Employee;
+import com.chj.gr.repository.EmployeeDao;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
