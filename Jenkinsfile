@@ -29,6 +29,18 @@ pipeline {
                 }
             }
         }
+        stage('SonarQube Analysis') {
+            steps {
+                // Nom du serveur configuré dans l'étape 2
+                withSonarQubeEnv('SonarQubeServer') {
+                    sh '''
+                        mvn sonar:sonar \
+                            -Dsonar.java.binaries=. \
+                            -Dsonar.projectName=spring-boot-postgres-data-source -Dsonar.projectKey=spring-boot-postgres-data-source
+                    '''
+                }
+            }
+        }
         stage('Build Docker Image') {
             steps {
                 script {
