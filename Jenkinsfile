@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    tools {
+       // jdk 'JDK21'
+        maven 'MAVEN'
+    }
     environment {
         // Nom de l'image Docker
         DOCKER_IMAGE = 'jihed123/spring-boot-postgres-data-source:0.0.1-SNAPSHOT'
@@ -20,7 +24,7 @@ pipeline {
                 script {
                     // Construire le module Spring Boot
                     sh """
-                        /opt/maven/bin/mvn clean package
+                        mvn clean package
                     """
                 }
             }
@@ -35,7 +39,6 @@ pipeline {
                 }
             }
         }
-		
 
 //        stage('Push Docker Image') {
 //            steps {
